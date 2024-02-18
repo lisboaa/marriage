@@ -1,32 +1,59 @@
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
 import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className='relative w-screen h-screen bg-current'>
-      <div className='fixed flex flex-row z-10 break-all'>
+    <div className='relative w-screen h-screen overflow-x-hidden  bg-[#094e43f5]'>
+      <div className='lg:w-1/2 md:w-2/3 sm:w-full xs:w-full flex flex-col pl-3 pt-3'>
         <Sheet>
-          <SheetTrigger asChild>
+          <SheetTrigger asChild className='lg:hidden md:hidden sm:hidden xs:hidden'>
             <Button size="icon" variant="outline">
               <MenuIcon/>
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="left">
+          <SheetContent side="left" className='flex flex-col'>
             <SheetHeader className='text-left text-lg font-semibold'>
-              Menu
+            <Image
+              src="/logo.png"
+              width={60}
+              height={60}
+              alt='Logo'
+            />
             </SheetHeader>
+            <SheetClose asChild className='mb-1'>
+              <Link href="/">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  Lista de Presente
+                </Button>
+              </Link>
+            </SheetClose>
+            <SheetClose asChild className='mb-1'>
+              <Link href="/">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  Guia padrinho
+                </Button>
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link href="/">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  Local Evento
+                </Button>
+              </Link>
+            </SheetClose>
           </SheetContent>
         </Sheet>
-        <Image
+        {/* <Image
           src="/logo.png"
           width={60}
           height={60}
           alt='Logo'
-        />
-        <ul className='text-xs ps-5 pt-5'>
+        /> */}
+        {/* <ul className='text-xs ps-5 pt-5'>
           <li>Home</li>
         </ul>
         <ul className='text-xs ps-5 pt-5'>
@@ -37,12 +64,25 @@ export default function Home() {
         </ul>
         <ul className='text-xs ps-5 pr-5'>
           <li>Local Evento</li>
-        </ul>
+        </ul> */}
       </div>
-
-      <div className='opacity-80'>
+      
+      <div className='text-center'>
         <Image
-          src="/casal.jpeg"
+            src="/T&D.png"
+            width={60}
+            height={60}
+            alt='Logo'
+          />
+        <Link href="/">
+          <Button variant="outline" className="w-60  rounded-3xl bg-transparent border-solid text-white">
+            <span>Lista de Presente</span>
+          </Button>
+        </Link>
+      </div>
+      <div>
+        <Image
+          src="/back-ground-img.png"
           width={0}
           height={0}
           sizes="100vw"
