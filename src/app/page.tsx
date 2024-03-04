@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className='relative w-screen h-screen overflow-x-hidden  bg-[#094e43f5]'>
+    <div className='relative w-screen h-screen overflow-x-hidden  bg-[#094e43f5]' style={{ backgroundImage: "url('/back-ground-img.png')"}}>
       <div className='lg:w-1/2 md:w-2/3 sm:w-full xs:w-full flex flex-col pl-3 pt-3'>
         <Sheet>
           <SheetTrigger asChild className='lg:hidden md:hidden sm:hidden xs:hidden'>
@@ -17,7 +17,7 @@ export default function Home() {
 
           <SheetContent side="left" className='flex flex-col'>
             <SheetHeader className='text-left text-lg font-semibold'>
-            <Image
+            <Image className='flex items-center'
               src="/logo.png"
               width={60}
               height={60}
@@ -66,20 +66,33 @@ export default function Home() {
           <li>Local Evento</li>
         </ul> */}
       </div>
-      
-      <div className='text-center'>
-        <Image
+
+      <div className='flex flex-col items-center'>
+        <div className="mb-48">
+          <Image
             src="/T&D.png"
             width={60}
             height={60}
             alt='Logo'
           />
+        </div>
+        <div className='mb-44 px-8'>
+          <Image
+            src="/Tatiane&Douglas.png"
+            width={400}
+            height={80}
+            alt='Logo'
+        />
+      </div>
+      <div className="mt-auto">        
         <Link href="/">
-          <Button variant="outline" className="w-60  rounded-3xl bg-transparent border-solid text-white">
+          <Button variant="outline" className="w-60 rounded-3xl bg-transparent border-solid text-white">
             <span>Lista de Presente</span>
           </Button>
         </Link>
       </div>
+    </div>
+
       <div>
         <Image
           src="/back-ground-img.png"
