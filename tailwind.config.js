@@ -14,9 +14,17 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      fontFamily: {
+        'sans': ['ui-sans-serif', 'system-ui'],
+        'serif': ['ui-serif', 'Georgia'],
+        'mono': ['ui-monospace', 'SFMono-Regular'],
+        'display': ['Oswald'],
+        'body': ['"Open Sans"']
+      }
     },
     extend: {
       colors: {
+        tituloT: "#AE9C8F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

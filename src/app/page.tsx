@@ -32,7 +32,7 @@ export default function Home() {
               </Link>
             </SheetClose>
             <SheetClose asChild className='mb-1'>
-              <Link href="/">
+              <Link href="/guia-padrinho">
                 <Button variant="outline" className="w-full justify-start gap-2">
                   Guia padrinho
                 </Button>

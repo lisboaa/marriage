@@ -20,7 +20,10 @@
     "shadcn-ui": "^0.4.1",
     "sheet": "^0.2.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typeface-crimson-pro": "^1.1.13",
+    "typeface-italianno": "^1.1.13",
+    "typeface-playfair-display": "^1.1.13"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -74,3 +74,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* globals.css */
+p {
+  font-family: 'Crimson Pro', serif; /* Para o texto do corpo */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif; /* Para os títulos */
+}
+
+.italianno {
+  font-family: 'Italianno', cursive; /* Para um elemento específico, se necessário */
+}
