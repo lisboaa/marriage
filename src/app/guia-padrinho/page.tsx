@@ -7,65 +7,65 @@ import Image from 'next/image'
 export default function GuiaPadrinho() {
     return (
         <div>
-            <div className='lg:w-1/2 md:w-2/3 sm:w-full xs:w-full flex flex-col pl-3 pt-3'>
-        <Sheet>
-          <SheetTrigger asChild className='lg:hidden md:hidden sm:hidden xs:hidden'>
-            <Button size="icon" variant="outline">
-              <MenuIcon/>
-            </Button>
-          </SheetTrigger>
+          <div className='lg:w-1/2 md:w-2/3 sm:w-full xs:w-full flex flex-col pl-3 pt-3'>
+            <Sheet>
+              <SheetTrigger asChild className='lg:hidden md:hidden sm:hidden xs:hidden'>
+                <Button size="icon" variant="outline">
+                  <MenuIcon/>
+                </Button>
+              </SheetTrigger>
 
-          <SheetContent side="left" className='flex flex-col'>
-            <SheetHeader className='text-left text-lg font-semibold'>
-            <Image className='flex items-center'
+              <SheetContent side="left" className='flex flex-col'>
+                <SheetHeader className='text-left text-lg font-semibold'>
+                <Image className='flex items-center'
+                  src="/logo.png"
+                  width={60}
+                  height={60}
+                  alt='Logo'
+                />
+                </SheetHeader>
+                <SheetClose asChild className='mb-1'>
+                  <Link href="/">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                      Lista de Presente
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className='mb-1'>
+                  <Link href="/guia-padrinho">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                      Guia padrinho
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                      Local Evento
+                    </Button>
+                  </Link>
+                </SheetClose>
+              </SheetContent>
+            </Sheet>
+            {/* <Image
               src="/logo.png"
               width={60}
               height={60}
               alt='Logo'
-            />
-            </SheetHeader>
-            <SheetClose asChild className='mb-1'>
-              <Link href="/">
-                <Button variant="outline" className="w-full justify-start gap-2">
-                  Lista de Presente
-                </Button>
-              </Link>
-            </SheetClose>
-            <SheetClose asChild className='mb-1'>
-              <Link href="/guia-padrinho">
-                <Button variant="outline" className="w-full justify-start gap-2">
-                  Guia padrinho
-                </Button>
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link href="/">
-                <Button variant="outline" className="w-full justify-start gap-2">
-                  Local Evento
-                </Button>
-              </Link>
-            </SheetClose>
-          </SheetContent>
-        </Sheet>
-        {/* <Image
-          src="/logo.png"
-          width={60}
-          height={60}
-          alt='Logo'
-        /> */}
-        {/* <ul className='text-xs ps-5 pt-5'>
-          <li>Home</li>
-        </ul>
-        <ul className='text-xs ps-5 pt-5'>
-          <li>Lista de Presente</li>
-        </ul>
-        <ul className='text-xs pt-5'>
-          <li>Guia padrinho</li>
-        </ul>
-        <ul className='text-xs ps-5 pr-5'>
-          <li>Local Evento</li>
-        </ul> */}
-      </div>
+            /> */}
+            {/* <ul className='text-xs ps-5 pt-5'>
+              <li>Home</li>
+            </ul>
+            <ul className='text-xs ps-5 pt-5'>
+              <li>Lista de Presente</li>
+            </ul>
+            <ul className='text-xs pt-5'>
+              <li>Guia padrinho</li>
+            </ul>
+            <ul className='text-xs ps-5 pr-5'>
+              <li>Local Evento</li>
+            </ul> */}
+        </div>
             <article className="text-pretty p-10 pt-20">
                 <p className='text-gray-800 text-base text-center '>Queridos padrinhos o nosso grande dia esta chegando e nos so poderiamos dizer sim na presença de vocês. Estamos felizes por aceitarem e fazer parte da nossa historia.</p>
             </article>

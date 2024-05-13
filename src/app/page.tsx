@@ -25,7 +25,7 @@ export default function Home() {
             />
             </SheetHeader>
             <SheetClose asChild className='mb-1'>
-              <Link href="/">
+              <Link href="/lista-presente">
                 <Button variant="outline" className="w-full justify-start gap-2">
                   Lista de Presente
                 </Button>
@@ -42,6 +42,13 @@ export default function Home() {
               <Link href="/">
                 <Button variant="outline" className="w-full justify-start gap-2">
                   Local Evento
+                </Button>
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link href="/card-pessoa">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  Teste card
                 </Button>
               </Link>
             </SheetClose>
