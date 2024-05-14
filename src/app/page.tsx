@@ -77,15 +77,15 @@ export default function Home() {
       <div className='flex flex-col items-center'>
         <div className="mb-48">
           <Image
-            src="/T&D.png"
-            width={60}
-            height={60}
+            src="/marca_submarca.png"
+            width={1200}
+            height={1200}
             alt='Logo'
           />
         </div>
         <div className='mb-44 px-8'>
           <Image
-            src="/Tatiane&Douglas.png"
+            src="/marca_logo.png"
             width={400}
             height={80}
             alt='Logo'
