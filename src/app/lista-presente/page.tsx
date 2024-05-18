@@ -79,8 +79,8 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>sfasdfasdfasdfaasdsaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p className='break-all pt-5'>R$:</p>
+                            <p className='break-all'>Lava louças</p>
+                            <p className='break-all pt-5'>R$:1.800,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -92,7 +92,7 @@ export default function GuiaPadrinho() {
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
                     <div className=" h-[300] flex flex-row">
                         <Image
-                            src='/lava-louca.jpeg'
+                            src='/forno-eletrico.jpg'
                             alt=''
                             height={100}
                             width={115}
@@ -102,8 +102,8 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>sfasdfasdfasdfaasdsaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p className='break-all pt-5'>R$:</p>
+                            <p className='break-all'>Forno elétrico</p>
+                            <p className='break-all pt-5'>R$:500,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -115,7 +115,7 @@ export default function GuiaPadrinho() {
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
                     <div className=" h-[300] flex flex-row">
                         <Image
-                            src='/lava-louca.jpeg'
+                            src='/coifa.png'
                             alt=''
                             height={100}
                             width={115}
@@ -125,8 +125,8 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>sfasdfasdfasdfaasdsaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p className='break-all pt-5'>R$:</p>
+                            <p className='break-all'>Exaustor</p>
+                            <p className='break-all pt-5'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -138,7 +138,7 @@ export default function GuiaPadrinho() {
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
                     <div className=" h-[300] flex flex-row">
                         <Image
-                            src='/lava-louca.jpeg'
+                            src='/faqueiro.png'
                             alt=''
                             height={100}
                             width={115}
@@ -148,8 +148,468 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>sfasdfasdfasdfaasdsaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            <p className='break-all pt-5'>R$:</p>
+                            <p className='break-all'>Faqueiro</p>
+                            <p className='break-all pt-5'>R$:500,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/jogo-xicara.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Jogo de xícaras</p>
+                            <p className='break-all pt-5'>R$:150,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/jogo-jantar.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Jogo Jantar</p>
+                            <p className='break-all pt-5'>R$:400,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/jogo-taca.jpeg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Jogo Taças</p>
+                            <p className='break-all pt-5'>R$:150,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/liquidificador.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Faqueiro</p>
+                            <p className='break-all pt-5'>R$:180,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/batedeira.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Batedeira</p>
+                            <p className='break-all pt-5'>R$:300,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/multiprocessador.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Multiprocessador</p>
+                            <p className='break-all pt-5'>R$:300,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/sanduicheira.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Sanduicheira</p>
+                            <p className='break-all pt-5'>R$:150,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/cafeteira.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Cafeteira</p>
+                            <p className='break-all pt-5'>R$:400,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/panela-arroz.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Panela Elétrica de arroz </p>
+                            <p className='break-all pt-5'>R$:300,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/panela-eletrica-feijao.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Panela Eletrica de feijão</p>
+                            <p className='break-all pt-5'>R$:300,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/espremedor-fruta.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Espremedor de frutas</p>
+                            <p className='break-all pt-5'>R$:200,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/mesa-de-jantar-sao-francisco.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Mesa de jantar</p>
+                            <p className='break-all pt-5'>R$:1.500,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/ventilador.jpg'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Ventilador de teto</p>
+                            <p className='break-all pt-5'>R$:400,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/aspirador.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Aspirador de pó vertical</p>
+                            <p className='break-all pt-5'>R$:250,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/aspirador-po.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Aspirador de pó</p>
+                            <p className='break-all pt-5'>R$:400,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/secadora.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>Secadora de roupas</p>
+                            <p className='break-all pt-5'>R$:2.000,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/voucher.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>VOUCHER</p>
+                            <p className='break-all pt-5'>R$:200,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/voucher2.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>VOUCHER</p>
+                            <p className='break-all pt-5'>R$:300,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/voucher2.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>VOUCHER</p>
+                            <p className='break-all pt-5'>R$:500,00</p>
+                        </article>
+                    </div>
+                    <div className='pl-1 pr-1 pb-1 pt-2'>
+                        <Button className='w-full'>
+                            <p>COMPRAR</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
+                    <div className=" h-[300] flex flex-row">
+                        <Image
+                            src='/voucher3.png'
+                            alt=''
+                            height={100}
+                            width={115}
+                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
+                            style={{
+                                objectFit: "contain"
+                            }}
+                        />
+                        <article className='flex flex-col pt-5 pl-5 pr-5'>
+                            <p className='break-all'>VOUCHER</p>
+                            <p className='break-all pt-5'>R$:1000,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
