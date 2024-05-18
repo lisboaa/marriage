@@ -240,7 +240,7 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Faqueiro</p>
+                            <p className='break-all'>Liquidificador</p>
                             <p className='break-all pt-5'>R$:180,00</p>
                         </article>
                     </div>
@@ -378,7 +378,8 @@ export default function GuiaPadrinho() {
                             }}
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Panela Eletrica de feijão</p>
+                            <p className='break-all'>Panela Eletrica de 
+                            feijão</p>
                             <p className='break-all pt-5'>R$:300,00</p>
                         </article>
                     </div>
@@ -552,7 +553,7 @@ export default function GuiaPadrinho() {
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
                     <div className=" h-[300] flex flex-row">
                         <Image
-                            src='/voucher2.png'
+                            src='/voucher1.png'
                             alt=''
                             height={100}
                             width={115}
@@ -609,7 +610,7 @@ export default function GuiaPadrinho() {
                         />
                         <article className='flex flex-col pt-5 pl-5 pr-5'>
                             <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:1000,00</p>
+                            <p className='break-all pt-5'>R$:1.000,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>

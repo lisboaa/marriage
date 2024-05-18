@@ -67,7 +67,7 @@ export default function GuiaPadrinho() {
             </ul> */}
         </div>
             <article className="text-pretty p-10 pt-20">
-                <p className='text-gray-800 text-base text-center '>Queridos padrinhos o nosso grande dia esta chegando e nos so poderiamos dizer sim na presença de vocês. Estamos felizes por aceitarem e fazer parte da nossa historia.</p>
+                <p className='text-gray-800 text-base text-center '>Queridos padrinhos, o nosso grande dia está chegando e nós só poderíamos dizer sim na presença de vocês. Estamos felizes por aceitarem fazer parte da nossa história.</p>
             </article>
             <div className='p-10'>
                 <h1 className='pb-10 text-4xl text-center text-tituloT'>Save the date</h1>
@@ -85,7 +85,7 @@ export default function GuiaPadrinho() {
             <div className='text-pretty p-10'>
                 <article className="text-wrap">
                     <h1 className='pb-10 text-4xl text-center text-tituloT'>Madrinha seu trage</h1>
-                    <p className='text-gray-800 text-base text-center '>Queremos que você se sinta elegante e confortavel por isso ninguém melhor que você para escolher o modelo de vestido que mais lhe agrada escolhemos a cor fúccia.</p>
+                    <p className='text-gray-800 text-base text-center '>Queremos que você se sinta elegante e confortável, por isso, ninguém melhor do que você para escolher o modelo de vestido que mais lhe agrada. Escolhemos a cor fúcsia.</p>
                         <div className='flex items-center justify-center pt-10'>
                             <Image className='rounded-lg'
                                 src="/trage-madrinha.jpeg"
@@ -100,7 +100,7 @@ export default function GuiaPadrinho() {
             <div className='text-pretty p-10'>
                 <article className="text-wrap">
                     <h1 className='pb-10 text-4xl text-center text-tituloT'>Padrinho</h1>
-                    <p className='text-gray-800 text-base text-center '>Para o home é mais facil né gostariamos que utlizasem terno preto, camisa branca e gravata fúccia que é um presente nosso para vocês.</p>
+                    <p className='text-gray-800 text-base text-center '>Para os homens é mais fácil, não é? Gostaríamos que utilizassem terno preto, camisa branca e gravata fúcsia, que é um presente nosso para vocês.</p>
                     <div className='flex items-center justify-center pt-10'>
                         <Image className='rounded-lg'
                             src="/trage-padrinho.jpeg"
@@ -115,9 +115,7 @@ export default function GuiaPadrinho() {
             <div className='text-pretty p-10'>
                 <article>                
                     <h1 className='pb-5 text-4xl text-center text-tituloT'>Para o grande dia</h1>
-                    <p className='text-gray-800 text-base text-center '>Chegue com 30mn de antecedencia tire
-                        Tire muitas fotos e nos ajude eternisar esse momento
-                        Ore pelo nosso futuro e divirta-se muito.
+                    <p className='text-gray-800 text-base text-center '>Chegue com 30 minutos de antecedência. Tire muitas fotos e nos ajude a eternizar esse momento. Ore pelo nosso futuro e divirta-se muito.
                     </p>
                     {/* <div className='flex items-center justify-center'>
                         <Image className=''
