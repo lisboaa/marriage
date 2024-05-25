@@ -77,7 +77,7 @@ export default function Home() {
       <div className='flex flex-col items-center'>
         <div className="mb-48">
           <Image
-            src="/marca_submarca.png"
+            src="/marca_submarca_1.png"
             width={1200}
             height={1200}
             alt='Logo'
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
         <div className='mb-44 px-8'>
           <Image
-            src="/marca_logo.png"
+            src="/marca_logo_1.png"
             width={400}
             height={80}
             alt='Logo'
