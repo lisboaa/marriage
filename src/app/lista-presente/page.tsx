@@ -23,7 +23,7 @@ export default function ListaPresente() {
         const checkout = await createCheckout(productObject);
         
         const stripe = await loadStripe(
-            "pk_test_51O5HGiB6KTaqaB4KnGw1q3I4ORRFZjSYPDqKnLhN7OXzuAjYdhv4ZHGp5StkvAPke5uGwVMyDBgnzOlldpRtPzqe00WlGghpPD"
+            `${process.env.STRIPE_PUBLIC_KEY}`
         );
 
         stripe?.redirectToCheckout({

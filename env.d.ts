@@ -1,7 +1,10 @@
 declare namespace NodeJS {
     interface ProcessEnv {
-        NEXT_PUBLIC_URL_DEV: "http://localhost:3000";
-        NEXT_PUBLIC_URL_HML: "https://marriagedouglastatiane.com/"
+        GOOGLE_CLIENT_ID: string;
+        GOOGLE_CLIENT_SECRET: string;
+        STRIPE_SECRET_KEY: string;
+        STRIPE_PUBLIC_KEY: string;
+        STRIPE_WEBHOOK_SECRET_KEY: string;
     }
 }
     
