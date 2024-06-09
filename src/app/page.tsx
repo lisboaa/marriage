@@ -18,12 +18,19 @@ export default function Home() {
           <SheetContent side="left" className='flex flex-col'>
             <SheetHeader className='text-left text-lg font-semibold'>
             <Image className='flex items-center'
-              src="/logo.png"
+              src="/marca_submarca-logo.png"
               width={60}
               height={60}
               alt='Logo'
             />
             </SheetHeader>
+            <SheetClose asChild className='mb-1'>
+              <Link href="/">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  Inicio
+                </Button>
+              </Link>
+            </SheetClose>
             <SheetClose asChild className='mb-1'>
               <Link href="/lista-presente">
                 <Button variant="outline" className="w-full justify-start gap-2">
@@ -39,16 +46,9 @@ export default function Home() {
               </Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href="/">
+              <Link href="/lista-presente">
                 <Button variant="outline" className="w-full justify-start gap-2">
                   Local Evento
-                </Button>
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link href="/card-pessoa">
-                <Button variant="outline" className="w-full justify-start gap-2">
-                  Teste card
                 </Button>
               </Link>
             </SheetClose>
@@ -75,28 +75,28 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col items-center'>
-        <div className="mb-48">
+        <div className="mb-30">
           <Image
             src="/marca_submarca_1.png"
             width={1200}
-            height={1200}
+            height={800}
             alt='Logo'
           />
         </div>
-        <div className='mb-44 px-8'>
+        <div className="">        
+          <Link href="/">
+            <Button variant="outline" className="w-60 rounded-3xl bg-transparent border-solid text-white">
+              <span>Lista de Presente</span>
+            </Button>
+          </Link>
+        </div>
+        <div className='pt-20'>
           <Image
             src="/marca_logo_1.png"
             width={400}
             height={80}
             alt='Logo'
         />
-      </div>
-      <div className="mt-auto">        
-        <Link href="/">
-          <Button variant="outline" className="w-60 rounded-3xl bg-transparent border-solid text-white">
-            <span>Lista de Presente</span>
-          </Button>
-        </Link>
       </div>
     </div>
 

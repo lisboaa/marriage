@@ -51,6 +51,13 @@ export default function ListaPresente() {
                     />
                     </SheetHeader>
                     <SheetClose asChild className='mb-1'>
+                        <Link href="/">
+                            <Button variant="outline" className="w-full justify-start gap-2">
+                            Inicio
+                            </Button>
+                        </Link>
+                    </SheetClose>
+                    <SheetClose asChild className='mb-1'>
                     <Link href="/">
                         <Button variant="outline" className="w-full justify-start gap-2">
                         Lista de Presente
@@ -92,53 +99,7 @@ export default function ListaPresente() {
                 <li>Local Evento</li>
                 </ul> */}
             </div>
-            <div className="flex flex-col items-center">
-            <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
-                    <div className=" h-[300] flex flex-row">
-                        <Image
-                            src='/voucher3.png'
-                            alt=''
-                            height={100}
-                            width={115}
-                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
-                            style={{
-                                objectFit: "contain"
-                            }}
-                        />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:1</p>
-                        </article>
-                    </div>
-                    <div className='pl-1 pr-1 pb-1 pt-2'>
-                        <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(1), 'VOUCHER')}>
-                            <p>COMPRAR</p>
-                        </Button>
-                    </div>
-                </div>
-                <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col mt-16'>
-                    <div className=" h-[300] flex flex-row">
-                        <Image
-                            src='/voucher3.png'
-                            alt=''
-                            height={100}
-                            width={115}
-                            className="h-auto max-h-[70%] w-auto max-w-[80%]"
-                            style={{
-                                objectFit: "contain"
-                            }}
-                        />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:2</p>
-                        </article>
-                    </div>
-                    <div className='pl-1 pr-1 pb-1 pt-2'>
-                        <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(2), 'VOUCHER')}>
-                            <p>COMPRAR</p>
-                        </Button>
-                    </div>
-                </div>
+            <div className="flex flex-col items-center mt-5">
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col'>
                     <div className=" h-[300] flex flex-row">
                         <Image
@@ -151,9 +112,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Lava louças</p>
-                            <p className='break-all pt-5'>R$:1.800,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Lava louças</p>
+                            <p className='break-all font-sans font-semibold'>R$:1.800,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -174,9 +135,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Forno elétrico</p>
-                            <p className='break-all pt-5'>R$:500,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Forno elétrico</p>
+                            <p className='break-all font-sans font-semibold'>R$:500,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -197,9 +158,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Exaustor</p>
-                            <p className='break-all pt-5'>R$:400,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Exaustor</p>
+                            <p className='break-all font-sans font-semibold'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -220,9 +181,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Faqueiro</p>
-                            <p className='break-all pt-5'>R$:500,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Faqueiro</p>
+                            <p className='break-all font-sans font-semibold'>R$:500,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -243,9 +204,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Jogo de xícaras</p>
-                            <p className='break-all pt-5'>R$:150,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Jogo de xícaras</p>
+                            <p className='break-all font-sans font-semibold'>R$:150,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -266,9 +227,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Jogo Jantar</p>
-                            <p className='break-all pt-5'>R$:400,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Jogo Jantar</p>
+                            <p className='break-all font-sans font-semibold'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -289,9 +250,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Jogo Taças</p>
-                            <p className='break-all pt-5'>R$:150,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Jogo Taças</p>
+                            <p className='break-all font-sans font-semibold'>R$:150,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -312,9 +273,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Liquidificador</p>
-                            <p className='break-all pt-5'>R$:180,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Liquidificador</p>
+                            <p className='break-all font-sans font-semibold'>R$:180,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -335,9 +296,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Batedeira</p>
-                            <p className='break-all pt-5'>R$:300,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Batedeira</p>
+                            <p className='break-all font-sans font-semibold'>R$:300,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -358,9 +319,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Multiprocessador</p>
-                            <p className='break-all pt-5'>R$:300,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Multiprocessador</p>
+                            <p className='break-all font-sans font-semibold'>R$:300,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -381,9 +342,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Sanduicheira</p>
-                            <p className='break-all pt-5'>R$:150,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Sanduicheira</p>
+                            <p className='break-all font-sans font-semibold'>R$:150,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -404,9 +365,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Cafeteira</p>
-                            <p className='break-all pt-5'>R$:400,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Cafeteira</p>
+                            <p className='break-all font-sans font-semibold'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -427,9 +388,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Panela Elétrica de arroz </p>
-                            <p className='break-all pt-5'>R$:300,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Panela Elétrica de arroz </p>
+                            <p className='break-all font-sans font-semibold'>R$:300,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -450,10 +411,10 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Panela Eletrica de 
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Panela Eletrica de 
                             feijão</p>
-                            <p className='break-all pt-5'>R$:300,00</p>
+                            <p className='break-all font-sans font-semibold'>R$:300,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -474,9 +435,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Espremedor de frutas</p>
-                            <p className='break-all pt-5'>R$:200,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Espremedor de frutas</p>
+                            <p className='break-all font-sans font-semibold'>R$:200,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -497,9 +458,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Mesa de jantar</p>
-                            <p className='break-all pt-5'>R$:1.500,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Mesa de jantar</p>
+                            <p className='break-all font-sans font-semibold'>R$:1.500,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -520,9 +481,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Ventilador de teto</p>
-                            <p className='break-all pt-5'>R$:400,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Ventilador de teto</p>
+                            <p className='break-all font-sans font-semibold'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -543,9 +504,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Aspirador de pó vertical</p>
-                            <p className='break-all pt-5'>R$:250,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Aspirador de pó vertical</p>
+                            <p className='break-all font-sans font-semibold'>R$:250,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -566,9 +527,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Aspirador de pó</p>
-                            <p className='break-all pt-5'>R$:400,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Aspirador de pó</p>
+                            <p className='break-all font-sans font-semibold'>R$:400,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -589,9 +550,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>Secadora de roupas</p>
-                            <p className='break-all pt-5'>R$:2.000,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>Secadora de roupas</p>
+                            <p className='break-all font-sans font-semibold'>R$:2.000,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -612,9 +573,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:200,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>VOUCHER</p>
+                            <p className='break-all font-sans font-semibold'>R$:200,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -635,9 +596,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:300,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>VOUCHER</p>
+                            <p className='break-all font-sans font-semibold'>R$:300,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -658,9 +619,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:500,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>VOUCHER</p>
+                            <p className='break-all font-sans font-semibold'>R$:500,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
@@ -681,9 +642,9 @@ export default function ListaPresente() {
                                 objectFit: "contain"
                             }}
                         />
-                        <article className='flex flex-col pt-5 pl-5 pr-5'>
-                            <p className='break-all'>VOUCHER</p>
-                            <p className='break-all pt-5'>R$:1.000,00</p>
+                        <article className='flex flex-col pl-5 justify-end'>
+                            <p className='break-all font-sans font-medium text-custom_gray'>VOUCHER</p>
+                            <p className='break-all font-sans font-semibold'>R$:1.000,00</p>
                         </article>
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
