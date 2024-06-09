@@ -84,7 +84,7 @@ export default function Home() {
           />
         </div>
         <div className="">        
-          <Link href="/">
+          <Link href="/lista-presente">
             <Button variant="outline" className="w-60 rounded-3xl bg-transparent border-solid text-white">
               <span>Lista de Presente</span>
             </Button>
