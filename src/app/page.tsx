@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
-import { MenuIcon } from 'lucide-react'
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger, } from '@/components/ui/sheet'
+import { Carousel,CarouselContent, CarouselItem } from '@/components/ui/carousel'
+import { MenuIcon, HomeIcon, GiftIcon, LibraryIcon, ListChecksIcon, MapIcon, Heart } from 'lucide-react'
 import Image from 'next/image'
 import Link from "next/link";
+import  CountdownTimerProps from '@/components/CountdownTimerProps';
 
 export default function Home() {
   return (
@@ -26,7 +28,9 @@ export default function Home() {
             </SheetHeader>
             <SheetClose asChild className='mb-1'>
               <Link href="/">
+              
                 <Button variant="outline" className="w-full justify-start gap-2">
+                <HomeIcon size={18}/>
                   Inicio
                 </Button>
               </Link>
@@ -34,6 +38,7 @@ export default function Home() {
             <SheetClose asChild className='mb-1'>
               <Link href="/lista-presente">
                 <Button variant="outline" className="w-full justify-start gap-2">
+                  <GiftIcon size={18}/>
                   Lista de Presente
                 </Button>
               </Link>
@@ -41,41 +46,33 @@ export default function Home() {
             <SheetClose asChild className='mb-1'>
               <Link href="/guia-padrinho">
                 <Button variant="outline" className="w-full justify-start gap-2">
+                  <LibraryIcon size={18}/>
                   Guia padrinho
+                </Button>
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link href="/lista-presenca">
+                <Button variant="outline" className="w-full justify-start gap-2">
+                  <ListChecksIcon size={18}/>
+                  Confirmar Presença
                 </Button>
               </Link>
             </SheetClose>
             <SheetClose asChild>
               <Link href="/lista-presente">
                 <Button variant="outline" className="w-full justify-start gap-2">
+                  <MapIcon/>
                   Local Evento
                 </Button>
               </Link>
             </SheetClose>
           </SheetContent>
         </Sheet>
-        {/* <Image
-          src="/logo.png"
-          width={60}
-          height={60}
-          alt='Logo'
-        /> */}
-        {/* <ul className='text-xs ps-5 pt-5'>
-          <li>Home</li>
-        </ul>
-        <ul className='text-xs ps-5 pt-5'>
-          <li>Lista de Presente</li>
-        </ul>
-        <ul className='text-xs pt-5'>
-          <li>Guia padrinho</li>
-        </ul>
-        <ul className='text-xs ps-5 pr-5'>
-          <li>Local Evento</li>
-        </ul> */}
       </div>
 
-      <div className='flex flex-col items-center'>
-        <div className="mb-30">
+      <div className='flex flex-col h-screen bg-cream-soft items-center justify-center text-center'>
+        <div className="mb-10"> {/* Ajuste na margem */}
           <Image
             src="/marca_submarca_1.png"
             width={1200}
@@ -83,34 +80,37 @@ export default function Home() {
             alt='Logo'
           />
         </div>
-        <div className="">        
-          <Link href="/lista-presente">
-            <Button variant="outline" className="w-60 rounded-3xl bg-transparent border-solid text-white">
-              <span>Lista de Presente</span>
-            </Button>
-          </Link>
-        </div>
-        <div className='pt-20'>
-          <Image
-            src="/marca_logo_1.png"
-            width={400}
-            height={80}
-            alt='Logo'
-        />
-      </div>
-    </div>
+        <CountdownTimerProps targetDate="2024-11-15T00:00:00" />
 
-      <div>
-        <Image
-          src="/back-ground-img.png"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: '100vw', height: 'auto' }}
-          alt='Casal'
-          objectFit='cover'
-        />
       </div>
+
+      <div className='flex flex-col h-screen bg-cream-soft items-center justify-center text-center mt-28'>
+        <div>
+          <div className='flex flex-col items-center justify-center text-center'>
+            <Heart size={40}/>
+          </div>
+          <h1 className="text-4xl font-bold mb-5">NOSSA HISTORIA</h1>
+          {/* <Carousel className="w-full max-w-4xl h-auto mb-5">
+            <CarouselContent>
+              <CarouselItem>
+                <Image src="/juntos-beijo.jpg" width={300} height={300} alt='Foto dos Noivos' layout="responsive" />
+              </CarouselItem>
+              <CarouselItem>
+                <Image src="/juntos-praca.jpg" width={300} height={300} alt='Foto dos Noivos' layout="responsive" />
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel> */}
+          <p className="px-5 text-lg">
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
+            versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+
     </div>
   )
 }

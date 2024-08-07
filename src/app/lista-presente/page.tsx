@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
-import { MenuIcon } from 'lucide-react'
+import { MenuIcon, HomeIcon, GiftIcon, LibraryIcon, ListChecksIcon, MapIcon } from 'lucide-react'
 import Link from "next/link";
 import { createCheckout } from "@/actions/checkout";
 import { loadStripe } from "@stripe/stripe-js";
@@ -34,7 +34,7 @@ export default function ListaPresente() {
     return (
         <>
             <div className='lg:w-1/2 md:w-2/3 sm:w-full xs:w-full flex flex-col pl-3 pt-3'>
-                <Sheet>
+            <Sheet>
                 <SheetTrigger asChild className='lg:hidden md:hidden sm:hidden xs:hidden'>
                     <Button size="icon" variant="outline">
                     <MenuIcon/>
@@ -44,22 +44,25 @@ export default function ListaPresente() {
                 <SheetContent side="left" className='flex flex-col'>
                     <SheetHeader className='text-left text-lg font-semibold'>
                     <Image className='flex items-center'
-                    src="/logo.png"
+                    src="/marca_submarca-logo.png"
                     width={60}
                     height={60}
                     alt='Logo'
                     />
                     </SheetHeader>
                     <SheetClose asChild className='mb-1'>
-                        <Link href="/">
-                            <Button variant="outline" className="w-full justify-start gap-2">
-                            Inicio
-                            </Button>
-                        </Link>
+                    <Link href="/">
+                    
+                        <Button variant="outline" className="w-full justify-start gap-2">
+                        <HomeIcon size={18}/>
+                        Inicio
+                        </Button>
+                    </Link>
                     </SheetClose>
                     <SheetClose asChild className='mb-1'>
-                    <Link href="/">
+                    <Link href="/lista-presente">
                         <Button variant="outline" className="w-full justify-start gap-2">
+                        <GiftIcon size={18}/>
                         Lista de Presente
                         </Button>
                     </Link>
@@ -67,37 +70,29 @@ export default function ListaPresente() {
                     <SheetClose asChild className='mb-1'>
                     <Link href="/guia-padrinho">
                         <Button variant="outline" className="w-full justify-start gap-2">
+                        <LibraryIcon size={18}/>
                         Guia padrinho
                         </Button>
                     </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                    <Link href="/">
+                    <Link href="/lista-presenca">
                         <Button variant="outline" className="w-full justify-start gap-2">
+                        <ListChecksIcon size={18}/>
+                        Confirmar Presença
+                        </Button>
+                    </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                    <Link href="/local-evento">
+                        <Button variant="outline" className="w-full justify-start gap-2">
+                        <MapIcon/>
                         Local Evento
                         </Button>
                     </Link>
                     </SheetClose>
                 </SheetContent>
-                </Sheet>
-                {/* <Image
-                src="/logo.png"
-                width={60}
-                height={60}
-                alt='Logo'
-                /> */}
-                {/* <ul className='text-xs ps-5 pt-5'>
-                <li>Home</li>
-                </ul>
-                <ul className='text-xs ps-5 pt-5'>
-                <li>Lista de Presente</li>
-                </ul>
-                <ul className='text-xs pt-5'>
-                <li>Guia padrinho</li>
-                </ul>
-                <ul className='text-xs ps-5 pr-5'>
-                <li>Local Evento</li>
-                </ul> */}
+            </Sheet>
             </div>
             <div className="flex flex-col items-center mt-5">
                 <div className='h-[210] w-80 rounded-l-md shadow-md flex flex-col'>
@@ -119,7 +114,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(1800), 'Lava louças')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium'>PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -142,7 +137,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(500), 'Forno elétrico')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -165,7 +160,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(400), 'Exaustor')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -188,7 +183,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(500), 'Faqueiro')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -211,7 +206,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(150), 'Jogo de xícaras')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -234,7 +229,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(400), 'Jogo Jantar')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -257,7 +252,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(150), 'Jogo Taças')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -280,7 +275,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(180), 'Liquidificador')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -303,7 +298,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(300), 'Batedeira')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -326,7 +321,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(300), 'Multiprocessador')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -349,7 +344,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(150), 'Sanduicheira')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -372,7 +367,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(400), 'Cafeteira')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -395,7 +390,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(300), 'Panela Elétrica de arroz')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -419,7 +414,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(300), 'Panela Eletrica de feijão')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -442,7 +437,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(200), 'Espremedor de frutas')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -465,7 +460,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(1500), 'Mesa de jantar')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -488,7 +483,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(400), 'Ventilador de teto')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -511,7 +506,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(250), 'Aspirador de pó vertical')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -534,7 +529,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(400), 'Aspirador de pó')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -557,7 +552,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(2000), 'Secadora de roupas')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -580,7 +575,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(200), 'VOUCHER')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -603,7 +598,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(300), 'VOUCHER')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -626,7 +621,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(500), 'VOUCHER')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>
@@ -649,7 +644,7 @@ export default function ListaPresente() {
                     </div>
                     <div className='pl-1 pr-1 pb-1 pt-2'>
                         <Button className='w-full' onClick={() =>handlerFinishPurchaseClick(Number(1000), 'VOUCHER')}>
-                            <p>COMPRAR</p>
+                            <p className='font-sans font-medium' >PRESENTEAR</p>
                         </Button>
                     </div>
                 </div>

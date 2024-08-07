@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
-import { MenuIcon } from 'lucide-react'
+import { MenuIcon, HomeIcon, GiftIcon, LibraryIcon, ListChecksIcon, MapIcon } from 'lucide-react'
 import Link from "next/link";
 import Image from 'next/image'
 
@@ -18,7 +18,7 @@ export default function GuiaPadrinho() {
               <SheetContent side="left" className='flex flex-col'>
                 <SheetHeader className='text-left text-lg font-semibold'>
                 <Image className='flex items-center'
-                  src="/logo.png"
+                  src="/marca_submarca-logo.png"
                   width={60}
                   height={60}
                   alt='Logo'
@@ -26,7 +26,17 @@ export default function GuiaPadrinho() {
                 </SheetHeader>
                 <SheetClose asChild className='mb-1'>
                   <Link href="/">
+                  
                     <Button variant="outline" className="w-full justify-start gap-2">
+                    <HomeIcon size={18}/>
+                      Inicio
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild className='mb-1'>
+                  <Link href="/lista-presente">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                      <GiftIcon size={18}/>
                       Lista de Presente
                     </Button>
                   </Link>
@@ -34,38 +44,30 @@ export default function GuiaPadrinho() {
                 <SheetClose asChild className='mb-1'>
                   <Link href="/guia-padrinho">
                     <Button variant="outline" className="w-full justify-start gap-2">
+                      <LibraryIcon size={18}/>
                       Guia padrinho
                     </Button>
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/">
+                  <Link href="/lista-presenca">
                     <Button variant="outline" className="w-full justify-start gap-2">
+                      <ListChecksIcon size={18}/>
+                      Confirmar Presença
+                    </Button>
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/local-evento">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                      <MapIcon/>
                       Local Evento
                     </Button>
                   </Link>
                 </SheetClose>
               </SheetContent>
             </Sheet>
-            {/* <Image
-              src="/logo.png"
-              width={60}
-              height={60}
-              alt='Logo'
-            /> */}
-            {/* <ul className='text-xs ps-5 pt-5'>
-              <li>Home</li>
-            </ul>
-            <ul className='text-xs ps-5 pt-5'>
-              <li>Lista de Presente</li>
-            </ul>
-            <ul className='text-xs pt-5'>
-              <li>Guia padrinho</li>
-            </ul>
-            <ul className='text-xs ps-5 pr-5'>
-              <li>Local Evento</li>
-            </ul> */}
-        </div>
+          </div>
             <article className="text-pretty p-10 pt-20">
                 <p className='text-gray-800 text-base text-center '>Queridos padrinhos, o nosso grande dia está chegando e nós só poderíamos dizer sim na presença de vocês. Estamos felizes por aceitarem fazer parte da nossa história.</p>
             </article>
@@ -88,7 +90,7 @@ export default function GuiaPadrinho() {
                     <p className='text-gray-800 text-base text-center '>Queremos que você se sinta elegante e confortável, por isso, ninguém melhor do que você para escolher o modelo de vestido que mais lhe agrada. Escolhemos a cor fúcsia.</p>
                         <div className='flex items-center justify-center pt-10'>
                             <Image className='rounded-lg'
-                                src="/trage-madrinha.jpeg"
+                                src="/vestido-madrinha.jpg"
                                 width={248}
                                 height={270}
                                 sizes='100vw'
@@ -103,7 +105,7 @@ export default function GuiaPadrinho() {
                     <p className='text-gray-800 text-base text-center '>Para os homens é mais fácil, não é? Gostaríamos que utilizassem terno preto, camisa branca e gravata fúcsia, que é um presente nosso para vocês.</p>
                     <div className='flex items-center justify-center pt-10'>
                         <Image className='rounded-lg'
-                            src="/trage-padrinho.jpeg"
+                            src="/gravata-padrinho.jpg"
                             width={248}
                             height={270}
                             sizes='100vw'
@@ -138,7 +140,16 @@ export default function GuiaPadrinho() {
                 </article>
             </div>
             <footer className='text-pretty p-10'>
-                <p className='text-slate-500/25 text-center text-4xl font-[Italianno]'>Douglas  &  Tatiane</p>
+            <hr className="border-t-2 border-gray-300 my-4"/>
+            <div className='flex items-center justify-center pt-5'>
+                        <Image className=''
+                            src="/marca_submarca-logo.png"
+                            width={80}
+                            height={70}
+                            sizes='100vw'
+                            alt='Calendario'
+                        />
+                    </div>
             </footer>
         </div>
     )
