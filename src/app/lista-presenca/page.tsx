@@ -26,7 +26,7 @@ const formSchema = z.object({
     }).max(30, {
         message: "Nome e sobrenome já é o suficiente para confimação de presença.",
     }),
-    cpf: z.string().min(12, {
+    cpf: z.string().min(11, {
         message: "Digite o numero de CPF completo.",
       }).max(16, {
         message: "Limite de caracteres ultrapassado.",
@@ -58,7 +58,7 @@ export default function ListaPresenca() {
 
         if(isCpfValido) {
 
-            const listaConvidados  = await fetch('http://localhost:3000/api/buscar-convidados/buscar', {
+            const listaConvidados  = await fetch('https://marriagedouglastatiane.com/api/buscar-convidados/buscar', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ export default function ListaPresenca() {
             const pularRegra = false;
 
             if(dadosResponse.convidados.length <= 0) {
-                const response  = await fetch('http://localhost:3000/api/convidados/create', {
+                const response  = await fetch('https://marriagedouglastatiane.com/api/convidados/create', {
                     method: 'POST',
                     body: JSON.stringify({nome: values.nome, cpf: values.cpf, telefone: values.telefone, quantidade_adulto: 0, quantidade_crianca: 0}),
                     headers: {
