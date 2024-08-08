@@ -60,7 +60,7 @@ export default function Home() {
               </Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href="/lista-presente">
+              <Link href="/local-evento">
                 <Button variant="outline" className="w-full justify-start gap-2">
                   <MapIcon/>
                   Local Evento
