@@ -60,7 +60,7 @@ export default function ListaPresente() {
                 </Link>
               </SheetClose>
               <SheetClose asChild>
-                <Link href="/lista-presente">
+                <Link href="/local-evento">
                   <Button variant="outline" className="w-full justify-start gap-2">
                     <MapIcon/>
                     Local Evento
@@ -73,7 +73,7 @@ export default function ListaPresente() {
         <div className='flex flex-col'>
           <h1 className='text-4xl flex justify-center'>Local Evento</h1>
           <span className='w-2/3 text-xl mt-28 text-wrap font-sans font-medium pl-5'>Eden Garden Saída para Campo Mourão. Rodovia 317, km 114, Maringá 87015090</span>
-          <a className='text-cyan-600 text-xl mt-5 text-wrap flex justify-center pt-10' target='_blank' href='https://maps.app.goo.gl/amvCThSAUin7Mxwb9?g_st=aw'>Localização</a>
+          <a className='text-cyan-600 text-xl mt-5 text-wrap flex justify-center pt-10' target='_blank' href='https://maps.app.goo.gl/amvCThSAUin7Mxwb9?g_st=aw'>Google Maps Localização</a>
         </div>
           
         <div className="flex flex-col items-center justify-center mt-10">
